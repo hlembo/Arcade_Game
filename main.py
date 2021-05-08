@@ -49,7 +49,7 @@ en_x_change = []
 en_y_change = []
 num_enemy = 10
 for i in range(num_enemy):
-    en_im.append(pygame.image.load('venv/assests/sonic.png'))
+    en_im.append(pygame.image.load('venv/assests/ufo.png'))
     en_X.append(random.randint(0, screen.get_width() - en_im[i].get_width()))
     en_Y.append(random.randint(0, (screen.get_height() - en_im[i].get_height()) / 4))
     en_x_change.append(5)
@@ -156,7 +156,7 @@ def bullet_Condition(bullet_S):
 game_over = True
 # back ground game sound
 if game_over:
-    mixer.music.load('venv/assests/SAO.mp3')
+    mixer.music.load('venv/assests/inter.ogg')
     mixer.music.set_volume(1000000)
     mixer.music.play(-1)
 else:
